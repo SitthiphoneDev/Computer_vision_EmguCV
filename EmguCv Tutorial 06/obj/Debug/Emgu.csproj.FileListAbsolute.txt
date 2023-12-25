@@ -22,3 +22,4 @@ C:\Users\Sitth\source\repos\Image-Histogram-Emgucv-C-\EmguCv Tutorial 06\obj\Deb
 C:\Users\Sitth\source\repos\Image-Histogram-Emgucv-C-\EmguCv Tutorial 06\obj\Debug\EmguCv_Tutorial_06.Lab_7_Histogram_Equalization_and_Image_Filtering.resources
 C:\Users\Sitth\source\repos\Image-Histogram-Emgucv-C-\EmguCv Tutorial 06\obj\Debug\EmguCv_Tutorial_06.Homework_2.resources
 C:\Users\Sitth\source\repos\Image-Histogram-Emgucv-C-\EmguCv Tutorial 06\obj\Debug\EmguCv_Tutorial_06.Homework_3.resources
+C:\Users\Sitth\source\repos\Image-Histogram-Emgucv-C-\EmguCv Tutorial 06\obj\Debug\EmguCv_Tutorial_06.Lab_5_Image_Binarization.resources

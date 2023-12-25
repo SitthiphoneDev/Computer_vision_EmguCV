@@ -76,6 +76,12 @@
     <Compile Include="Homework 3.Designer.cs">
       <DependentUpon>Homework 3.cs</DependentUpon>
     </Compile>
+    <Compile Include="Lab 5 Image Binarization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab 5 Image Binarization.Designer.cs">
+      <DependentUpon>Lab 5 Image Binarization.cs</DependentUpon>
+    </Compile>
     <Compile Include="Lab 6 Get Binary Image from Input Image.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Homework 3.resx">
       <DependentUpon>Homework 3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab 5 Image Binarization.resx">
+      <DependentUpon>Lab 5 Image Binarization.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Lab 6 Get Binary Image from Input Image.resx">
       <DependentUpon>Lab 6 Get Binary Image from Input Image.cs</DependentUpon>
