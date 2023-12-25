@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.histogramBox1 = new Emgu.CV.UI.HistogramBox();
-            this.imageBox1 = new Emgu.CV.UI.ImageBox();
+            this.htgAfterE = new Emgu.CV.UI.HistogramBox();
+            this.imgBoxGray = new Emgu.CV.UI.ImageBox();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnSaveImage = new System.Windows.Forms.Button();
             this.btnMedian = new System.Windows.Forms.Button();
@@ -38,34 +38,41 @@
             this.btnEqualization = new System.Windows.Forms.Button();
             this.btnLoadImage = new System.Windows.Forms.Button();
             this.ImgBoxOutput = new Emgu.CV.UI.ImageBox();
-            this.htgAfterE = new Emgu.CV.UI.HistogramBox();
+            this.htgGray = new Emgu.CV.UI.HistogramBox();
             this.htgBeforeE = new Emgu.CV.UI.HistogramBox();
             this.imgBoxInput = new Emgu.CV.UI.ImageBox();
-            ((System.ComponentModel.ISupportInitialize)(this.imageBox1)).BeginInit();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtksize = new System.Windows.Forms.TextBox();
+            this.radioBgr = new System.Windows.Forms.RadioButton();
+            this.radioGray = new System.Windows.Forms.RadioButton();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.imgBoxGray)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgBoxOutput)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgBoxInput)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // histogramBox1
+            // htgAfterE
             // 
-            this.histogramBox1.Location = new System.Drawing.Point(330, 530);
-            this.histogramBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.histogramBox1.Name = "histogramBox1";
-            this.histogramBox1.Size = new System.Drawing.Size(541, 251);
-            this.histogramBox1.TabIndex = 26;
+            this.htgAfterE.Location = new System.Drawing.Point(330, 530);
+            this.htgAfterE.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.htgAfterE.Name = "htgAfterE";
+            this.htgAfterE.Size = new System.Drawing.Size(541, 251);
+            this.htgAfterE.TabIndex = 26;
             // 
-            // imageBox1
+            // imgBoxGray
             // 
-            this.imageBox1.Location = new System.Drawing.Point(4, 528);
-            this.imageBox1.Name = "imageBox1";
-            this.imageBox1.Size = new System.Drawing.Size(268, 251);
-            this.imageBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imageBox1.TabIndex = 25;
-            this.imageBox1.TabStop = false;
+            this.imgBoxGray.Location = new System.Drawing.Point(4, 271);
+            this.imgBoxGray.Name = "imgBoxGray";
+            this.imgBoxGray.Size = new System.Drawing.Size(268, 251);
+            this.imgBoxGray.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgBoxGray.TabIndex = 25;
+            this.imgBoxGray.TabStop = false;
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(927, 330);
+            this.btnExit.Location = new System.Drawing.Point(927, 445);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(127, 35);
             this.btnExit.TabIndex = 24;
@@ -75,7 +82,7 @@
             // 
             // btnSaveImage
             // 
-            this.btnSaveImage.Location = new System.Drawing.Point(927, 278);
+            this.btnSaveImage.Location = new System.Drawing.Point(927, 393);
             this.btnSaveImage.Name = "btnSaveImage";
             this.btnSaveImage.Size = new System.Drawing.Size(127, 35);
             this.btnSaveImage.TabIndex = 23;
@@ -85,7 +92,7 @@
             // 
             // btnMedian
             // 
-            this.btnMedian.Location = new System.Drawing.Point(927, 224);
+            this.btnMedian.Location = new System.Drawing.Point(927, 339);
             this.btnMedian.Name = "btnMedian";
             this.btnMedian.Size = new System.Drawing.Size(127, 35);
             this.btnMedian.TabIndex = 22;
@@ -95,7 +102,7 @@
             // 
             // btnGuassian
             // 
-            this.btnGuassian.Location = new System.Drawing.Point(927, 170);
+            this.btnGuassian.Location = new System.Drawing.Point(927, 285);
             this.btnGuassian.Name = "btnGuassian";
             this.btnGuassian.Size = new System.Drawing.Size(127, 35);
             this.btnGuassian.TabIndex = 21;
@@ -125,20 +132,20 @@
             // 
             // ImgBoxOutput
             // 
-            this.ImgBoxOutput.Location = new System.Drawing.Point(4, 271);
+            this.ImgBoxOutput.Location = new System.Drawing.Point(4, 528);
             this.ImgBoxOutput.Name = "ImgBoxOutput";
             this.ImgBoxOutput.Size = new System.Drawing.Size(268, 251);
             this.ImgBoxOutput.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ImgBoxOutput.TabIndex = 18;
             this.ImgBoxOutput.TabStop = false;
             // 
-            // htgAfterE
+            // htgGray
             // 
-            this.htgAfterE.Location = new System.Drawing.Point(330, 271);
-            this.htgAfterE.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.htgAfterE.Name = "htgAfterE";
-            this.htgAfterE.Size = new System.Drawing.Size(541, 251);
-            this.htgAfterE.TabIndex = 17;
+            this.htgGray.Location = new System.Drawing.Point(330, 271);
+            this.htgGray.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.htgGray.Name = "htgGray";
+            this.htgGray.Size = new System.Drawing.Size(541, 251);
+            this.htgGray.TabIndex = 17;
             // 
             // htgBeforeE
             // 
@@ -157,13 +164,77 @@
             this.imgBoxInput.TabIndex = 15;
             this.imgBoxInput.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(906, 521);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(42, 16);
+            this.label1.TabIndex = 27;
+            this.label1.Text = "Ksize:";
+            // 
+            // txtksize
+            // 
+            this.txtksize.Location = new System.Drawing.Point(954, 518);
+            this.txtksize.Name = "txtksize";
+            this.txtksize.Size = new System.Drawing.Size(92, 22);
+            this.txtksize.TabIndex = 28;
+            // 
+            // radioBgr
+            // 
+            this.radioBgr.AutoSize = true;
+            this.radioBgr.Location = new System.Drawing.Point(25, 31);
+            this.radioBgr.Name = "radioBgr";
+            this.radioBgr.Size = new System.Drawing.Size(58, 29);
+            this.radioBgr.TabIndex = 29;
+            this.radioBgr.TabStop = true;
+            this.radioBgr.Text = "Bgr";
+            this.radioBgr.UseVisualStyleBackColor = true;
+            // 
+            // radioGray
+            // 
+            this.radioGray.AutoSize = true;
+            this.radioGray.Location = new System.Drawing.Point(25, 59);
+            this.radioGray.Name = "radioGray";
+            this.radioGray.Size = new System.Drawing.Size(66, 29);
+            this.radioGray.TabIndex = 30;
+            this.radioGray.TabStop = true;
+            this.radioGray.Text = "Gray";
+            this.radioGray.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.radioBgr);
+            this.groupBox1.Controls.Add(this.radioGray);
+            this.groupBox1.Font = new System.Drawing.Font("Noto Sans Lao", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(927, 171);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(127, 94);
+            this.groupBox1.TabIndex = 31;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "ເລືອກ Noise";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(937, 564);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(127, 35);
+            this.button1.TabIndex = 32;
+            this.button1.Text = "Guassian Filter";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Homework_3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1076, 785);
-            this.Controls.Add(this.histogramBox1);
-            this.Controls.Add(this.imageBox1);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.txtksize);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.htgAfterE);
+            this.Controls.Add(this.imgBoxGray);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnSaveImage);
             this.Controls.Add(this.btnMedian);
@@ -171,22 +242,25 @@
             this.Controls.Add(this.btnEqualization);
             this.Controls.Add(this.btnLoadImage);
             this.Controls.Add(this.ImgBoxOutput);
-            this.Controls.Add(this.htgAfterE);
+            this.Controls.Add(this.htgGray);
             this.Controls.Add(this.htgBeforeE);
             this.Controls.Add(this.imgBoxInput);
             this.Name = "Homework_3";
             this.Text = "Homework_3";
-            ((System.ComponentModel.ISupportInitialize)(this.imageBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgBoxGray)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgBoxOutput)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgBoxInput)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private Emgu.CV.UI.HistogramBox histogramBox1;
-        private Emgu.CV.UI.ImageBox imageBox1;
+        private Emgu.CV.UI.HistogramBox htgAfterE;
+        private Emgu.CV.UI.ImageBox imgBoxGray;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnSaveImage;
         private System.Windows.Forms.Button btnMedian;
@@ -194,8 +268,14 @@
         private System.Windows.Forms.Button btnEqualization;
         private System.Windows.Forms.Button btnLoadImage;
         private Emgu.CV.UI.ImageBox ImgBoxOutput;
-        private Emgu.CV.UI.HistogramBox htgAfterE;
+        private Emgu.CV.UI.HistogramBox htgGray;
         private Emgu.CV.UI.HistogramBox htgBeforeE;
         private Emgu.CV.UI.ImageBox imgBoxInput;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtksize;
+        private System.Windows.Forms.RadioButton radioBgr;
+        private System.Windows.Forms.RadioButton radioGray;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button button1;
     }
 }

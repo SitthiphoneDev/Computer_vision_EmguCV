@@ -20,11 +20,11 @@ namespace EmguCv_Tutorial_06
             InitializeComponent();
         }
 
-        Image<Bgr, byte> imgBeforeE;
-        Image<Gray, byte> imgFilter, imgAfterE;
+        Image<Bgr, byte> imgBeforeE, imgFilterC;
+        Image<Gray, byte> imgFilter, imgAfterE, imgGray;
 
          private void btnLoadImage_Click(object sender, EventArgs e)
-        {
+         {
             OpenFileDialog opf = new OpenFileDialog();
             opf.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.gif;*.bmp;*.tiff";
             if (opf.ShowDialog() == DialogResult.OK)
@@ -33,9 +33,14 @@ namespace EmguCv_Tutorial_06
                 imgBoxInput.Image = imgBeforeE;
                 htgBeforeE.GenerateHistograms(imgBeforeE, 255);
                 htgBeforeE.Refresh();
+
+                imgGray = new Image<Gray, byte>(opf.FileName);
+                imgBoxGray.Image = imgGray;
+                htgGray.GenerateHistograms(imgGray, 255);
+                htgGray.Refresh();
             }
 
-        }
+         }
 
         private void btnSaveImage_Click(object sender, EventArgs e)
         {
@@ -58,32 +63,62 @@ namespace EmguCv_Tutorial_06
 
         private void btnMedian_Click(object sender, EventArgs e)
         {
-            imgFilter = new Image<Gray, byte>(imgAfterE.Width, imgAfterE.Height);
-            CvInvoke.MedianBlur(imgAfterE, imgFilter, 7);
-            ImgBoxOutput.Image = imgFilter;
+            if (int.TryParse(txtksize.Text, out int ksize) && ksize > 0 && ksize % 2 == 1)
+            {
+                imgFilter = new Image<Gray, byte>(imgAfterE.Width, imgAfterE.Height);
+                CvInvoke.MedianBlur(imgAfterE, imgFilter, ksize);
+                ImgBoxOutput.Image = imgFilter;
+                ImgBoxOutput.Refresh();
+                htgAfterE.ClearHistogram();
+                htgAfterE.GenerateHistograms(imgFilter, 255);
+                htgAfterE.Refresh();
+            }
+            else
+            {
+                MessageBox.Show("Please enter a valid integer for ksize.");
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            imgFilterC = new Image<Bgr, byte>(imgBeforeE.Width, imgBeforeE.Height);
+
+
+            CvInvoke.GaussianBlur(imgBeforeE, imgFilterC, new Size(3, 3), 0, 0, BorderType.Default);
+
+
+            ImgBoxOutput.Image = imgFilterC;
             ImgBoxOutput.Refresh();
             htgAfterE.ClearHistogram();
-            htgAfterE.GenerateHistograms(imgFilter, 255);
+            htgAfterE.GenerateHistograms(imgFilterC, 255);
             htgAfterE.Refresh();
         }
 
         private void btnGuassian_Click(object sender, EventArgs e)
         {
-            imgFilter = new Image<Gray, byte>(imgAfterE.Width, imgAfterE.Height);
-            CvInvoke.GaussianBlur(imgAfterE, imgFilter, new Size(7, 7), 0, 0, BorderType.Default);
+            if (int.TryParse(txtksize.Text, out int ksize) && ksize > 0 && ksize % 2 == 1)
+            {
+                imgFilter = new Image<Gray, byte>(imgAfterE.Width, imgAfterE.Height);
+                CvInvoke.GaussianBlur(imgAfterE, imgFilter, new Size(ksize, ksize), 0, 0, BorderType.Default);
 
-            ImgBoxOutput.Image = imgFilter;
-            ImgBoxOutput.Refresh();
-            htgAfterE.ClearHistogram();
-            htgAfterE.GenerateHistograms(imgFilter, 255);
-            htgAfterE.Refresh();
-
+                ImgBoxOutput.Image = imgFilter;
+                ImgBoxOutput.Refresh();
+                htgAfterE.ClearHistogram();
+                htgAfterE.GenerateHistograms(imgFilter, 255);
+                htgAfterE.Refresh();
+            }
+            else
+            {
+                MessageBox.Show("Please enter a valid odd integer for ksize greater than 1.");
+            }
         }
+
+
 
         private void btnEqualization_Click(object sender, EventArgs e)
         {
             imgAfterE = new Image<Gray, byte>(imgBeforeE.Width, imgBeforeE.Height);
-            CvInvoke.EqualizeHist(imgBeforeE, imgAfterE);
+            CvInvoke.EqualizeHist(imgGray, imgAfterE);
             ImgBoxOutput.Image = imgAfterE;
             htgAfterE.ClearHistogram();
             htgAfterE.GenerateHistograms(imgAfterE, 255);

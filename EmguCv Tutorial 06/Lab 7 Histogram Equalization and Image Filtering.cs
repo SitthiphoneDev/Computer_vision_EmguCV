@@ -91,6 +91,7 @@ namespace EmguCv_Tutorial_06
                 imgBoxInput.Image = imgBeforeE;
                 htgBeforeE.GenerateHistograms(imgBeforeE, 255);
                 htgBeforeE.Refresh();
+
             }
 
         }
