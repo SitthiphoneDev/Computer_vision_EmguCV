@@ -46,7 +46,6 @@
             this.radioBgr = new System.Windows.Forms.RadioButton();
             this.radioGray = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.imgBoxGray)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgBoxOutput)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgBoxInput)).BeginInit();
@@ -179,6 +178,7 @@
             this.txtksize.Name = "txtksize";
             this.txtksize.Size = new System.Drawing.Size(92, 22);
             this.txtksize.TabIndex = 28;
+            this.txtksize.Text = "3";
             // 
             // radioBgr
             // 
@@ -214,22 +214,11 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "ເລືອກ Noise";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(937, 564);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(127, 35);
-            this.button1.TabIndex = 32;
-            this.button1.Text = "Guassian Filter";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // Homework_3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1076, 785);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.txtksize);
             this.Controls.Add(this.label1);
@@ -276,6 +265,5 @@
         private System.Windows.Forms.RadioButton radioBgr;
         private System.Windows.Forms.RadioButton radioGray;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button1;
     }
 }
