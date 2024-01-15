@@ -58,5 +58,11 @@ namespace EmguCv_Tutorial_06
             Lab_8_Edge_Detection lab8Form = new Lab_8_Edge_Detection();
             lab8Form.Show();
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Morphology lab9Form = new Morphology();
+            lab9Form.Show();
+        }
     }
 }
