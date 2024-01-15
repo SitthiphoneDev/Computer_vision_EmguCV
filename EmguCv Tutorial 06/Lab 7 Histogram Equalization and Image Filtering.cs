@@ -53,8 +53,8 @@ namespace EmguCv_Tutorial_06
             htgAfterE.Refresh();
         }
 
-            private void btnGuassian_Click(object sender, EventArgs e)
-            {
+        private void btnGuassian_Click(object sender, EventArgs e)
+        {
                 imgFilter = new Image<Gray, byte>(imgAfterE.Width, imgAfterE.Height);
                 CvInvoke.GaussianBlur(imgAfterE, imgFilter, new Size(7, 7), 0, 0, BorderType.Default);
 

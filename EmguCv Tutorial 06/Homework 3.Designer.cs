@@ -178,7 +178,7 @@
             this.txtksize.Name = "txtksize";
             this.txtksize.Size = new System.Drawing.Size(92, 22);
             this.txtksize.TabIndex = 28;
-            this.txtksize.Text = "3";
+            this.txtksize.Text = "7";
             // 
             // radioBgr
             // 

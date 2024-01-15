@@ -11,7 +11,6 @@ C:\Users\Sitth\source\repos\Image-Histogram-Emgucv-C-\EmguCv Tutorial 06\bin\Deb
 C:\Users\Sitth\source\repos\Image-Histogram-Emgucv-C-\EmguCv Tutorial 06\bin\Debug\Emgu.CV.UI.GL.xml
 C:\Users\Sitth\source\repos\Image-Histogram-Emgucv-C-\EmguCv Tutorial 06\bin\Debug\Emgu.CV.World.xml
 C:\Users\Sitth\source\repos\Image-Histogram-Emgucv-C-\EmguCv Tutorial 06\obj\Debug\Emgu.csproj.AssemblyReference.cache
-C:\Users\Sitth\source\repos\Image-Histogram-Emgucv-C-\EmguCv Tutorial 06\obj\Debug\EmguCv_Tutorial_06.Form2.resources
 C:\Users\Sitth\source\repos\Image-Histogram-Emgucv-C-\EmguCv Tutorial 06\obj\Debug\EmguCv_Tutorial_06.Properties.Resources.resources
 C:\Users\Sitth\source\repos\Image-Histogram-Emgucv-C-\EmguCv Tutorial 06\obj\Debug\Emgu.csproj.GenerateResource.cache
 C:\Users\Sitth\source\repos\Image-Histogram-Emgucv-C-\EmguCv Tutorial 06\obj\Debug\Emgu.csproj.CoreCompileInputs.cache
@@ -23,3 +22,6 @@ C:\Users\Sitth\source\repos\Image-Histogram-Emgucv-C-\EmguCv Tutorial 06\obj\Deb
 C:\Users\Sitth\source\repos\Image-Histogram-Emgucv-C-\EmguCv Tutorial 06\obj\Debug\EmguCv_Tutorial_06.Homework_2.resources
 C:\Users\Sitth\source\repos\Image-Histogram-Emgucv-C-\EmguCv Tutorial 06\obj\Debug\EmguCv_Tutorial_06.Homework_3.resources
 C:\Users\Sitth\source\repos\Image-Histogram-Emgucv-C-\EmguCv Tutorial 06\obj\Debug\EmguCv_Tutorial_06.Lab_5_Image_Binarization.resources
+C:\Users\Sitth\source\repos\Image-Histogram-Emgucv-C-\EmguCv Tutorial 06\obj\Debug\EmguCv_Tutorial_06.Project.resources
+C:\Users\Sitth\source\repos\Image-Histogram-Emgucv-C-\EmguCv Tutorial 06\obj\Debug\EmguCv_Tutorial_06.Homework_1.resources
+C:\Users\Sitth\source\repos\Image-Histogram-Emgucv-C-\EmguCv Tutorial 06\obj\Debug\EmguCv_Tutorial_06.Lab_8_Edge_Detection.resources

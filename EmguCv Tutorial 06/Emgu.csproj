@@ -94,7 +94,19 @@
     <Compile Include="Lab 7 Histogram Equalization and Image Filtering.Designer.cs">
       <DependentUpon>Lab 7 Histogram Equalization and Image Filtering.cs</DependentUpon>
     </Compile>
+    <Compile Include="Lab 8 Edge Detection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab 8 Edge Detection.Designer.cs">
+      <DependentUpon>Lab 8 Edge Detection.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="Project.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project.Designer.cs">
+      <DependentUpon>Project.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Homework 1.resx">
       <DependentUpon>Homework 1.cs</DependentUpon>
@@ -113,6 +125,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Lab 7 Histogram Equalization and Image Filtering.resx">
       <DependentUpon>Lab 7 Histogram Equalization and Image Filtering.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab 8 Edge Detection.resx">
+      <DependentUpon>Lab 8 Edge Detection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project.resx">
+      <DependentUpon>Project.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

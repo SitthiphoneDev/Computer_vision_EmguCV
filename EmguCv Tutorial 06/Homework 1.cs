@@ -13,10 +13,10 @@ using Emgu.CV.CvEnum;
 
 namespace EmguCv_Tutorial_06
 {
-    public partial class Form2 : Form
+    public partial class Homework_1 : Form
     {
 
-        public Form2()
+        public Homework_1()
         {
             InitializeComponent();
 

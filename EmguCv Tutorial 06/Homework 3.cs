@@ -67,17 +67,10 @@ namespace EmguCv_Tutorial_06
             {
                 if (int.TryParse(txtksize.Text, out int ksize) && ksize > 0 && ksize % 2 == 1)
                 {
-                    // สร้างภาพสี (BGR) ใหม่
-                    imgFilterC = new Image<Bgr, byte>(imgAfterE.Width, imgAfterE.Height);
-
-                    // ทำการลบ noise ด้วย Median Filter
-                    CvInvoke.MedianBlur(imgAfterE, imgFilterC, ksize);
-
-                    // แสดงผลลัพธ์
+                    imgFilterC = new Image<Bgr, byte>(imgBeforeE.Width, imgBeforeE.Height);
+                    CvInvoke.MedianBlur(imgBeforeE, imgFilterC, ksize);
                     ImgBoxOutput.Image = imgFilterC;
                     ImgBoxOutput.Refresh();
-
-                    // ทำการล้าง Histogram และสร้างใหม่
                     htgAfterE.ClearHistogram();
                     htgAfterE.GenerateHistograms(imgFilterC, 255);
                     htgAfterE.Refresh();
@@ -87,21 +80,16 @@ namespace EmguCv_Tutorial_06
                     MessageBox.Show("Please enter a valid odd integer for ksize greater than 1.");
                 }
             }
+
             else if (radioGray.Checked)
             {
                 if (int.TryParse(txtksize.Text, out int ksize) && ksize > 0 && ksize % 2 == 1)
                 {
-                    // สร้างภาพสีเทาใหม่
-                    imgFilter = new Image<Gray, byte>(imgAfterE.Width, imgAfterE.Height);
+                    imgFilter = new Image<Gray, byte>(imgGray.Width, imgGray.Height);
+                    CvInvoke.MedianBlur(imgGray, imgFilter, ksize);
 
-                    // ทำการลบ noise ด้วย Median Filter
-                    CvInvoke.MedianBlur(imgAfterE, imgFilter, ksize);
-
-                    // แสดงผลลัพธ์
                     ImgBoxOutput.Image = imgFilter;
                     ImgBoxOutput.Refresh();
-
-                    // ทำการล้าง Histogram และสร้างใหม่
                     htgAfterE.ClearHistogram();
                     htgAfterE.GenerateHistograms(imgFilter, 255);
                     htgAfterE.Refresh();
@@ -111,6 +99,12 @@ namespace EmguCv_Tutorial_06
                     MessageBox.Show("Please enter a valid odd integer for ksize greater than 1.");
                 }
             }
+
+        }
+
+        private void radioBgr_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
 
         private void btnGuassian_Click(object sender, EventArgs e)
@@ -119,17 +113,10 @@ namespace EmguCv_Tutorial_06
             {
                 if (int.TryParse(txtksize.Text, out int ksize) && ksize > 0 && ksize % 2 == 1)
                 {
-                    // สร้างภาพสี (BGR) ใหม่
                     imgFilterC = new Image<Bgr, byte>(imgBeforeE.Width, imgBeforeE.Height);
-
-                    // ทำการลบ noise ด้วย Gaussian Filter
                     CvInvoke.GaussianBlur(imgBeforeE, imgFilterC, new Size(3, 3), 0, 0, BorderType.Default);
-
-                    // แสดงผลลัพธ์
                     ImgBoxOutput.Image = imgFilterC;
                     ImgBoxOutput.Refresh();
-
-                    // ทำการล้าง Histogram และสร้างใหม่
                     htgAfterE.ClearHistogram();
                     htgAfterE.GenerateHistograms(imgFilterC, 255);
                     htgAfterE.Refresh();
@@ -139,32 +126,27 @@ namespace EmguCv_Tutorial_06
                     MessageBox.Show("Please enter a valid odd integer for ksize greater than 1.");
                 }
             }
+
             else if (radioGray.Checked)
             {
                 if (int.TryParse(txtksize.Text, out int ksize) && ksize > 0 && ksize % 2 == 1)
                 {
-                    // สร้างภาพเทาใหม่
-                    imgFilter = new Image<Gray, byte>(imgAfterE.Width, imgAfterE.Height);
+                    imgFilter = new Image<Gray, byte>(imgGray.Width, imgGray.Height);
+                    CvInvoke.GaussianBlur(imgGray, imgFilter, new Size(ksize, ksize), 0, 0, BorderType.Default);
 
-                    // ทำการลบ noise ด้วย Gaussian Filter
-                    CvInvoke.GaussianBlur(imgAfterE, imgFilter, new Size(ksize, ksize), 0, 0, BorderType.Default);
-
-                    // แสดงผลลัพธ์
                     ImgBoxOutput.Image = imgFilter;
                     ImgBoxOutput.Refresh();
-
-                    // ทำการล้าง Histogram และสร้างใหม่
                     htgAfterE.ClearHistogram();
                     htgAfterE.GenerateHistograms(imgFilter, 255);
                     htgAfterE.Refresh();
                 }
                 else
                 {
-                    MessageBox.Show("Please enter a valid odd integer for ksize greater than 1.");
+                 //   MessageBox.Show("Please enter a valid odd integer for ksize greater than 1.");
                 }
             }
-        }
 
+        }
 
 
 

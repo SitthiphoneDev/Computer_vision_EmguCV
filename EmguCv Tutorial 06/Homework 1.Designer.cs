@@ -1,6 +1,6 @@
 ﻿namespace EmguCv_Tutorial_06
 {
-    partial class Form2
+    partial class Homework_1
     {
         /// <summary>
         /// Required designer variable.
@@ -34,9 +34,9 @@
             this.histogramBox1 = new Emgu.CV.UI.HistogramBox();
             this.btnLoadImage = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioR = new System.Windows.Forms.RadioButton();
-            this.radioG = new System.Windows.Forms.RadioButton();
             this.radioB = new System.Windows.Forms.RadioButton();
+            this.radioG = new System.Windows.Forms.RadioButton();
+            this.radioR = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.imginput)).BeginInit();
@@ -94,17 +94,17 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Histogram";
             // 
-            // radioR
+            // radioB
             // 
-            this.radioR.AutoSize = true;
-            this.radioR.Location = new System.Drawing.Point(27, 32);
-            this.radioR.Name = "radioR";
-            this.radioR.Size = new System.Drawing.Size(54, 20);
-            this.radioR.TabIndex = 0;
-            this.radioR.TabStop = true;
-            this.radioR.Text = "Red";
-            this.radioR.UseVisualStyleBackColor = true;
-            this.radioR.CheckedChanged += new System.EventHandler(this.radioR_CheckedChanged);
+            this.radioB.AutoSize = true;
+            this.radioB.Location = new System.Drawing.Point(27, 107);
+            this.radioB.Name = "radioB";
+            this.radioB.Size = new System.Drawing.Size(55, 20);
+            this.radioB.TabIndex = 2;
+            this.radioB.TabStop = true;
+            this.radioB.Text = "Blue";
+            this.radioB.UseVisualStyleBackColor = true;
+            this.radioB.CheckedChanged += new System.EventHandler(this.radioB_CheckedChanged);
             // 
             // radioG
             // 
@@ -118,17 +118,17 @@
             this.radioG.UseVisualStyleBackColor = true;
             this.radioG.CheckedChanged += new System.EventHandler(this.radioG_CheckedChanged);
             // 
-            // radioB
+            // radioR
             // 
-            this.radioB.AutoSize = true;
-            this.radioB.Location = new System.Drawing.Point(27, 107);
-            this.radioB.Name = "radioB";
-            this.radioB.Size = new System.Drawing.Size(55, 20);
-            this.radioB.TabIndex = 2;
-            this.radioB.TabStop = true;
-            this.radioB.Text = "Blue";
-            this.radioB.UseVisualStyleBackColor = true;
-            this.radioB.CheckedChanged += new System.EventHandler(this.radioB_CheckedChanged);
+            this.radioR.AutoSize = true;
+            this.radioR.Location = new System.Drawing.Point(27, 32);
+            this.radioR.Name = "radioR";
+            this.radioR.Size = new System.Drawing.Size(54, 20);
+            this.radioR.TabIndex = 0;
+            this.radioR.TabStop = true;
+            this.radioR.Text = "Red";
+            this.radioR.UseVisualStyleBackColor = true;
+            this.radioR.CheckedChanged += new System.EventHandler(this.radioR_CheckedChanged);
             // 
             // groupBox2
             // 
@@ -154,7 +154,7 @@
             this.comboBox1.TabIndex = 0;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // Form2
+            // Homework_1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -165,7 +165,7 @@
             this.Controls.Add(this.histogramBox1);
             this.Controls.Add(this.imgOutput);
             this.Controls.Add(this.imginput);
-            this.Name = "Form2";
+            this.Name = "Homework_1";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.imginput)).EndInit();
