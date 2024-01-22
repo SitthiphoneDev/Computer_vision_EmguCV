@@ -53,3 +53,4 @@ C:\Users\Advice\Source\Repos\Computer_vision_EmguCV\EmguCv Tutorial 06\obj\Debug
 C:\Users\Advice\Source\Repos\Computer_vision_EmguCV\EmguCv Tutorial 06\obj\Debug\EmguCv Tutorial 06.exe
 C:\Users\Advice\Source\Repos\Computer_vision_EmguCV\EmguCv Tutorial 06\obj\Debug\EmguCv Tutorial 06.pdb
 C:\Users\Advice\Source\Repos\Computer_vision_EmguCV\EmguCv Tutorial 06\obj\Debug\EmguCv_Tutorial_06.Morphology.resources
+C:\Users\Advice\source\repos\Computer_vision_EmguCV\EmguCv Tutorial 06\obj\Debug\EmguCv_Tutorial_06.Lab10_WebCam.resources

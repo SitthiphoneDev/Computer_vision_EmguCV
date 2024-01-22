@@ -106,6 +106,12 @@
     <Compile Include="Lab 9 Morphology.Designer.cs">
       <DependentUpon>Lab 9 Morphology.cs</DependentUpon>
     </Compile>
+    <Compile Include="Lab10_WebCam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab10_WebCam.Designer.cs">
+      <DependentUpon>Lab10_WebCam.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Project.cs">
       <SubType>Form</SubType>
@@ -137,6 +143,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Lab 9 Morphology.resx">
       <DependentUpon>Lab 9 Morphology.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab10_WebCam.resx">
+      <DependentUpon>Lab10_WebCam.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Project.resx">
       <DependentUpon>Project.cs</DependentUpon>

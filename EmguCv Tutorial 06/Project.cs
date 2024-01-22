@@ -64,5 +64,11 @@ namespace EmguCv_Tutorial_06
             Morphology lab9Form = new Morphology();
             lab9Form.Show();
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Lab10_WebCam lab10_WebCam = new Lab10_WebCam();
+            lab10_WebCam.Show();
+        }
     }
 }
